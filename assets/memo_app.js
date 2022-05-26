@@ -50,8 +50,8 @@ function addMemo() {
     const memoElement = createMemoElement(memoObject.id, memoObject.content);
     memosContainer.insertBefore(memoElement, addMemoButton);
 
-    currentMemos.push(memoObject);
-    saveCurrentMemo(memos);
+    currentMemo.push(memoObject);
+    //saveCurrentMemo(memos);
 }
 
 function updateMemo(id, newContent) {
@@ -67,5 +67,5 @@ function deleteMemo(id, element) {
     const memos = getMemos().filter(memo => note.id != id);
 
     saveMemos(memos);
-    memoContainer.removeChild(element);
+    memosContainer.removeChild(element);
 }
