@@ -22,16 +22,37 @@ h1, h2 {
     
 }
 
-.box {
-    margin: 3% auto;
-    display: flex;
-    flex-direction: row;
-    -ms-flex-align: center;
-    border: solid 2px ;
-    border-radius: 5px;
-    width: 30%;
-    height: 30%;
-    text-align: center;
-    font-size: 2rem;
-    
+
+#application {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 175px);
+    padding: 30px;
+    gap: 30px;
+}
+
+.memo {
+    height: 175px;
+    font-size: 15px;
+    font-family: "Roboto-Mono", sans-serif;
+    border: none;
+    border-radius: 13px;
+    padding: 20px;
+    resize: none;
+    box-sizing: border-box;
+
+
+}
+
+.add-memo {
+    height: 175px;
+    transition: background 0.3s;
+    background: 0, 0, 0, 0.1;
+    cursor: pointer;
+    font-size: 2.0rem;
+
+
+}
+
+.add-memo:hover {
+    background:0, 0, 0, 0.3;
 }
