@@ -19,14 +19,17 @@
     </div>
     <aside class="sidenav">
         <div class="container">
-            <h2>Calories Calculator</h2>
+            <h2>BMR Calories Calculator</h2>
             <p>Height(cm)</p>
             <input type="text" id="height">
             <p>Weight(kg)</p>
             <input type="number" id="weight">
-            <p>Sex(kg)</p>
-            <input type="number" id="sex">
-            <button id="btn">Calculate</button>
+            <p>Gender</p>
+            <select id="gender" required>
+                <option value="" selected></option>
+                <option value="female">Female</option>
+                <option value="man">Male</option>
+            </select>
             <span id="result"></span>
 
         </div>
