@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memo App</title>
+    <title>Food Planner</title>
 
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <header>
-    <h1>Save your Memo's here.</h1>
+    <h1>Create Your Meal Plan and Organize your health.</h1>
 </header>
 
 <body id="container">
@@ -18,6 +18,18 @@
         <button class="add-memo" type="button">+</button>
     </div>
     <aside class="sidenav">
+        <div class="container">
+            <h2>Calories Calculator</h2>
+            <p>Height(cm)</p>
+            <input type="text" id="height">
+            <p>Weight(kg)</p>
+            <input type="number" id="weight">
+            <p>Sex(kg)</p>
+            <input type="number" id="sex">
+            <button id="btn">Calculate</button>
+            <span id="result"></span>
+
+        </div>
         <div class="container">
             <h2>BMI Calculator</h2>
             <p>Height(cm)</p>

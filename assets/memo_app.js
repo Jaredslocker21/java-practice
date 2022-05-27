@@ -29,7 +29,7 @@ function createMemoElement(id, content) {
     });
 
     element.addEventListener("dblclick", () => {
-            const doDelete = confirm("delete Y or N");
+            const doDelete = confirm("delete Memo: OK or Cancel");
 
         if (doDelete) {
             deleteMemo(id, element)
