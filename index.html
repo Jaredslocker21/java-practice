@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,30 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <header>
-    <h1>Welcome to Productivity app.</h1>
+    <h1>Save your Memo's here.</h1>
 </header>
-<body id ="container">
-    <h2>Don't Forget</h2>
+
+<body id="container">
     <div id="application">
         <button class="add-memo" type="button">+</button>
-      </div>
-    
+    </div>
+    <aside class="sidenav">
+        <div class="container">
+            <h2>BMI Calculator</h2>
+            <p>Height(cm)</p>
+            <input type="text" id="height">
+            <p>Weight(kg)</p>
+            <input type="number" id="weight">
+            <button id="btn">Calculate</button>
+            <span id="result"></span>
+
+        </div>
+        <br>
+        <iframe class="calendar"
+            src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FStockholm&title=Memo%20Calendar&src=amFyZWRzbG9ja2VyMjFAZ21haWwuY29t&color=%23039BE5"></iframe>
+    </aside>
+
     <script type="text/javascript" src="assets/memo_app.js"></script>
 </body>
+
 </html>

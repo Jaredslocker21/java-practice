@@ -6,21 +6,44 @@
     border: none;
 }
 
-html, body{
+html, {
     height: 100%
 }
 
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,34,135,0.8463760504201681) 42%, rgba(0,212,255,1) 100%)
+    max-height: 100%;
+    max-width: 80%;
+    /*background: rgb(2,0,36);*/
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,34,135,0.8463760504201681) 42%, rgba(0,212,255,1) 100%)
+    background: url(../assets/images/pexels-pixabay-53594.jpg) no-repeat center fixed;
+    background-size: cover;*/
 }
-
-h1, h2 {
+h1  {
     color: red;
     font-family: "Roboto-Mono", sans-serif;
-    text-align: center;
+    text-align: left;
+    padding: 5%;
     
 }
+
+h2 {
+    color: red;
+    font-family: "Roboto-Mono", sans-serif;
+    text-align: right;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 20%;
+    padding: 3%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    border-left: 1px solid ;
+  }
 
 
 #application {
@@ -28,6 +51,7 @@ h1, h2 {
     grid-template-columns: repeat(auto-fill, 175px);
     padding: 30px;
     gap: 30px;
+    margin: auto;
 }
 
 .memo {
@@ -39,6 +63,7 @@ h1, h2 {
     padding: 20px;
     resize: none;
     box-sizing: border-box;
+    background-color: #FFFF88;
 
 
 }
@@ -56,3 +81,9 @@ h1, h2 {
 .add-memo:hover {
     background:0, 0, 0, 0.3;
 }
+
+.calendar {
+    border:solid 1px #777;
+    width: 300px; 
+    height: 400px;
+   
