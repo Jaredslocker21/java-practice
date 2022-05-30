@@ -24,7 +24,7 @@ function createMemoElement(id, content) {
     element.classList.add("memo")
     element.value = content;
     element.placeholder = "Keep Organized";
-
+// event listener to add updated content
     element.addEventListener("change", () => {
         updateMemo(id, element.value);
     });

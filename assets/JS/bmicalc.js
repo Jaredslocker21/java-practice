@@ -1,40 +1,35 @@
 //**BMI calculator */
 
 let button = document.querySelector("#btn");
-  
-// Function for calculating BMI
 button.addEventListener("click", calculateBMI);
 
+// Function for calculating BMI
 function calculateBMI() {
 
-/* Getting input from user into height variable.
-Input is string so typecasting is necessary. */
+/**Input height function as a string*/
 let height = parseInt(document
         .querySelector("#height").value);
 
-/* Getting input from user into weight variable. 
-Input is string so typecasting is necessary.*/
+/**  Input weigth as a string*/
 let weight = parseInt(document
         .querySelector("#weight").value);
 
 let result = document.querySelector("#result");
 
-// Checking the user providing a proper
-// value or not
+// Correcting the values provided
 if (height === "" || isNaN(height)) 
-    result.innerHTML = "Provide a valid Height!";
+    result.innerHTML = "Invalid height";
 
 else if (weight === "" || isNaN(weight)) 
-    result.innerHTML = "Provide a valid Weight!";
+    result.innerHTML = "Invalid weight!";
 
 // If both input is valid, calculate the bmi
 else {
 
-    // Fixing upto 2 decimal places
-    let bmi = (weight / ((height * height) 
-                        / 10000)).toFixed(2);
+    // Fixes up too two decimal points
+    let bmi = (weight / ((height * height) / 10000)).toFixed(2);
 
-    // Dividing as per the bmi conditions
+    // Results of BMI prints the result
     if (bmi < 18.6) result.innerHTML =
         `Under Weight : <span>${bmi}</span>`;
 
