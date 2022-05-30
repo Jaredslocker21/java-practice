@@ -2,8 +2,8 @@
 // Adapted from a few different turtorials 
 const memosContainer = document.getElementById("application")
 const addMemoButton = memosContainer.querySelector(".add-memo")
-
-getMemos().forEach((note) => {
+// creating a  memo from the add button
+getMemos().forEach((memo) => {
     const memoElement = createMemoElement(memo.id, memo.content)
     memosContainer.insertBefore(memoElement, addMemoButton)
 });
@@ -13,7 +13,7 @@ addMemoButton.addEventListener("click", () => addMemo());
 function getMemos() {
     return JSON.parse(localStorage.getItem("memopad-memos") || "[]");
 }
-
+// making a string out of the saved text in the memo
 function saveMemos(memos) {
     localStorage.setItem("memopad-memos", JSON.stringify(memos))
 
@@ -41,7 +41,7 @@ function createMemoElement(id, content) {
 return element;
 
 }
-
+// Adding a memo
 function addMemo() {
     const currentMemo = getMemos();
     const memoObject = {
@@ -53,21 +53,26 @@ function addMemo() {
     memosContainer.insertBefore(memoElement, addMemoButton);
 
     currentMemo.push(memoObject);
-    //saveCurrentMemo(memos);
+    
 }
-
+//Updating a memo 
 function updateMemo(id, newContent) {
+    // to do purge local storage and check if breaks. It does not and retains.
     const memos = getMemos();
-    const targetMemo = memos.filter(mote => memo.id == id)[0];
-
-    targetMemo.content = newContent;
-    saveMemos(memos);
+    console.log(memos)
+    let targetMemo = memos.filter(memo => memo.id === id)[0];
+    if (targetMemo) {
+        targetMemo.content = newContent;
+    } else {
+        targetMemo = {id, content:newContent}
+    } 
+    saveMemos([...memos,targetMemo]);
 
 }
-
+// Deleting  a memo.
 function deleteMemo(id, element) {
-    const memos = getMemos().filter(memo => note.id != id);
-
+    const memos = getMemos().filter(memo => memo.id != id);
+    // removing a memo from the saved memo array. 
     saveMemos(memos);
     memosContainer.removeChild(element);
 }
