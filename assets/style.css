@@ -6,7 +6,7 @@
     border: none;
 }
 
-html, {
+html {
     height: 100%;
 }
 
@@ -104,8 +104,12 @@ h2 {
     background:0, 0, 0, 0.3;
 }
 
-.calendar {
-    border:solid 1px #777;
-    width: 300px; 
-    height: 400px;
-   
+input[type="text"],
+.input-field {
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 2px 5px #888888;
+
+}
