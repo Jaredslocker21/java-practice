@@ -44,6 +44,7 @@ p {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 #nav li {
@@ -58,7 +59,7 @@ h2 {
 
 
 }
-
+ /*Side bar with BMI Calc.*/
 .sidenav {
     height: 100%;
     width: 20%;
@@ -127,4 +128,11 @@ input[type="number"],
     box-sizing: border-box;
     box-shadow: 2px 5px #888888;
 
+}
+
+@media screen(max-width: 800px) {
+    .sidenav{
+        break
+    }
+    
 }
