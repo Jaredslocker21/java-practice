@@ -12,6 +12,7 @@ html {
 
 body {
     max-height: 100%;
+    background-color: #fff9f9;
 
 }
 
@@ -21,10 +22,11 @@ body {
 }
 
 h1  {
-    color: lightblue;
+    color: rgb(40, 126, 155);
     font-family: "Roboto Mono", sans-serif;
     text-align: center;
     padding: 5%;
+    
     
 }
 
@@ -97,11 +99,12 @@ h2 {
     resize: none;
     box-sizing: border-box;
     background-color: #FFFF88;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 
 }
 
-.add-memo {
+.new-memo {
     height: 175px;
     transition:  0.3s;
     background: 0, 0, 0, 0.1;

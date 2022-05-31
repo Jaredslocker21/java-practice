@@ -1,25 +1,22 @@
-/** Adapted from turtorials
- *https://www.youtube.com/watch?v=01YKQmia2Jw
- *https://www.youtube.com/watch?v=Bav5SL8-sI4
-*/
+// Adapted from turtorials and research
+//https://www.youtube.com/watch?v=01YKQmia2Jw
+//https://www.youtube.com/watch?v=Bav5SL8-sI4
+//https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem
+//https://www.w3schools.com/jsref/met_storage_getitem.asp
 
 let memosContainer = document.getElementById("application");
-let addMemoButton = memosContainer.querySelector(".add-memo");
-// when browser is refreshed this fx 
-getMemos().forEach((memo) => {
-    let memoElement = createMemoElement(memo.id, memo.content);
-    memosContainer.insertBefore(memoElement, addMemoButton);
-});
-// Event listener. Click for new memo
-addMemoButton.addEventListener("click", () => addMemo());
-//API for local storage as an array
-function getMemos() {
-    return JSON.parse(localStorage.getItem("memopad-memos") || "[]");
-}
-// making a string out of the saved text in the memo
-function saveMemos(memos) {
-    localStorage.setItem("memopad-memos", JSON.stringify(memos));
+let addMemoButton = memosContainer.querySelector(".new-memo");
 
+/**JSON.stringify() ... 
+ * A common use of JSON is to exchange data to/from a web server. When sending data to a web server, the data has to be a string.
+ * he setItem() method sets the value of the specified Storage Object item. The setItem() method belongs to the Storage Object
+ */
+function saveMemos(memos) {
+    localStorage.setItem("remember-memos", JSON.stringify(memos));
+}
+// The getItem() method of the Storage interface, when passed a key name, will return that key's value
+function getMemos() {
+    return JSON.parse(localStorage.getItem("remember-memos") || "[]");
 }
 // Create a new memo
 function createMemoElement(id, content) {
@@ -28,7 +25,7 @@ function createMemoElement(id, content) {
     element.classList.add("memo");
     element.value = content;
     element.placeholder = "Keep Organized";
-// event listener to add updated content
+    // event listener to add updated content
     element.addEventListener("change", () => {
         updateMemo(id, element.value);
     });
@@ -42,7 +39,6 @@ function createMemoElement(id, content) {
     });
 
     return element;
-
 }
 // Adding a memo
 function addMemo() {
@@ -62,13 +58,13 @@ function addMemo() {
 function updateMemo(id, newContent) {
     // to do purge local storage and check if breaks. It does not and retains.
     let memos = getMemos();
-    console.log(memos);
     let targetMemo = memos.filter(memo => memo.id === id)[0];
     if (targetMemo) {
         targetMemo.content = newContent;
     } else {
         targetMemo = {
-            id,content: newContent,
+            id,
+            content: newContent,
         };
     }
     saveMemos([...memos, targetMemo]);
@@ -81,3 +77,10 @@ function deleteMemo(id, element) {
     saveMemos(memos);
     memosContainer.removeChild(element);
 }
+// Event listener Click for new memo
+addMemoButton.addEventListener("click", () => addMemo());
+//The forEach() method calls a function for each element in an array.
+getMemos().forEach((memo) => {
+    let memoElement = createMemoElement(memo.id, memo.content);
+    memosContainer.insertBefore(memoElement, addMemoButton);
+});
