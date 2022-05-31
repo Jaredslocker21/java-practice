@@ -12,9 +12,14 @@ html {
 
 body {
     max-height: 100%;
+
+}
+
+#mpcontainer {
     max-width: 70%;
 
 }
+
 h1  {
     color: lightblue;
     font-family: "Roboto Mono", sans-serif;

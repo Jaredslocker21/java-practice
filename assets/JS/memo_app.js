@@ -1,4 +1,7 @@
-// Adapted from a few different turtorials 
+/** Adapted from turtorials
+ *https://www.youtube.com/watch?v=01YKQmia2Jw
+ *https://www.youtube.com/watch?v=Bav5SL8-sI4
+*/
 const memosContainer = document.getElementById("application")
 const addMemoButton = memosContainer.querySelector(".add-memo")
 // creating a  memo from the add button
@@ -8,7 +11,7 @@ getMemos().forEach((memo) => {
 });
 // Event listener. Click for new memo
 addMemoButton.addEventListener("click", () => addMemo());
-//API for local storage
+//API for local storage as an array
 function getMemos() {
     return JSON.parse(localStorage.getItem("memopad-memos") || "[]");
 }
