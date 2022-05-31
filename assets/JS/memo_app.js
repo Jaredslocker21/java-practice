@@ -3,9 +3,10 @@
 //https://www.youtube.com/watch?v=Bav5SL8-sI4
 //https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem
 //https://www.w3schools.com/jsref/met_storage_getitem.asp
+//https://www.youtube.com/watch?v=AWcZcJaIntQ
 
 let memosContainer = document.getElementById("application");
-let addMemoButton = memosContainer.querySelector(".new-memo");
+let addMemoButton = memosContainer.querySelector(".create-memo");
 
 /**JSON.stringify() ... 
  * A common use of JSON is to exchange data to/from a web server. When sending data to a web server, the data has to be a string.
@@ -50,7 +51,8 @@ function addMemo() {
 
     let memoElement = createMemoElement(memoObject.id, memoObject.content);
     memosContainer.insertBefore(memoElement, addMemoButton);
-
+    //The push() method adds new items to the end of an array. 
+    //The push() method changes the length of the array. The push() method returns the new length.
     currentMemo.push(memoObject);
 
 }
@@ -62,9 +64,7 @@ function updateMemo(id, newContent) {
     if (targetMemo) {
         targetMemo.content = newContent;
     } else {
-        targetMemo = {
-            id,
-            content: newContent,
+        targetMemo = { id, content: newContent,
         };
     }
     saveMemos([...memos, targetMemo]);
