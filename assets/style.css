@@ -74,6 +74,11 @@ h2 {
   }
 
 
+#btn {
+    padding: 2%;
+    margin: 3%;
+}
+
 #application {
     display: grid;
     grid-template-columns: repeat(auto-fill, 175px);

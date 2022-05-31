@@ -2,12 +2,13 @@
  *https://www.youtube.com/watch?v=01YKQmia2Jw
  *https://www.youtube.com/watch?v=Bav5SL8-sI4
 */
-const memosContainer = document.getElementById("application")
-const addMemoButton = memosContainer.querySelector(".add-memo")
-// creating a  memo from the add button
+
+let memosContainer = document.getElementById("application");
+let addMemoButton = memosContainer.querySelector(".add-memo");
+// when browser is refreshed this fx 
 getMemos().forEach((memo) => {
-    const memoElement = createMemoElement(memo.id, memo.content)
-    memosContainer.insertBefore(memoElement, addMemoButton)
+    let memoElement = createMemoElement(memo.id, memo.content);
+    memosContainer.insertBefore(memoElement, addMemoButton);
 });
 // Event listener. Click for new memo
 addMemoButton.addEventListener("click", () => addMemo());
@@ -17,14 +18,14 @@ function getMemos() {
 }
 // making a string out of the saved text in the memo
 function saveMemos(memos) {
-    localStorage.setItem("memopad-memos", JSON.stringify(memos))
+    localStorage.setItem("memopad-memos", JSON.stringify(memos));
 
 }
 // Create a new memo
 function createMemoElement(id, content) {
     const element = document.createElement("textarea");
     //refering to a text area element and CSS class Id
-    element.classList.add("memo")
+    element.classList.add("memo");
     element.value = content;
     element.placeholder = "Keep Organized";
 // event listener to add updated content
@@ -33,10 +34,10 @@ function createMemoElement(id, content) {
     });
     //Delete  a memo 
     element.addEventListener("dblclick", () => {
-        const doDelete = confirm("delete Memo: OK or Cancel");
+        let doDelete = confirm("delete Memo: OK or Cancel");
         // If double clicked by event listener do delete by a confirm box. The confirm() method returns true if the user clicked "OK"           
         if (doDelete) {
-            deleteMemo(id, element)
+            deleteMemo(id, element);
         }
     });
 
@@ -45,13 +46,13 @@ function createMemoElement(id, content) {
 }
 // Adding a memo
 function addMemo() {
-    const currentMemo = getMemos();
-    const memoObject = {
+    let currentMemo = getMemos();
+    let memoObject = {
         id: Math.floor(Math.random() * 70000),
         content: ""
     };
 
-    const memoElement = createMemoElement(memoObject.id, memoObject.content);
+    let memoElement = createMemoElement(memoObject.id, memoObject.content);
     memosContainer.insertBefore(memoElement, addMemoButton);
 
     currentMemo.push(memoObject);
@@ -60,23 +61,22 @@ function addMemo() {
 //Updating a memo 
 function updateMemo(id, newContent) {
     // to do purge local storage and check if breaks. It does not and retains.
-    const memos = getMemos();
-    console.log(memos)
+    let memos = getMemos();
+    console.log(memos);
     let targetMemo = memos.filter(memo => memo.id === id)[0];
     if (targetMemo) {
         targetMemo.content = newContent;
     } else {
         targetMemo = {
-            id,
-            content: newContent
-        }
+            id,content: newContent,
+        };
     }
     saveMemos([...memos, targetMemo]);
 
 }
 // Deleting  a memo.
 function deleteMemo(id, element) {
-    const memos = getMemos().filter(memo => memo.id != id);
+    let memos = getMemos().filter(memo => memo.id != id);
     // removing a memo from the saved memo array. 
     saveMemos(memos);
     memosContainer.removeChild(element);
