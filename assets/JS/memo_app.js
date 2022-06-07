@@ -25,22 +25,19 @@ function createMemoElement(id, content) {
     //refering to a text area element and CSS class Id
     element.classList.add("memo");
     element.value = content;
-    element.placeholder = "Keep Organized";
+    element.placeholder = "Double Click to Delete";
     // event listener to add updated content
     element.addEventListener("change", () => {
         updateMemo(id, element.value);
     });
     //Delete  a memo 
     element.addEventListener("dblclick", () => {
-        let doDelete = confirm("delete Memo: OK or Cancel");
-        // If double clicked by event listener do delete by a confirm box. The confirm() method returns true if the user clicked "OK"           
-        if (doDelete) {
-            deleteMemo(id, element);
-        }
+        let doDelete = deleteMemo(id, element);
     });
 
     return element;
 }
+
 // Adding a memo
 function addMemo() {
     let currentMemo = getMemos();
