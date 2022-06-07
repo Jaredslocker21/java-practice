@@ -1,23 +1,22 @@
-# Welcome to Massage at Solid Gym
+# Welcome Food Planner Application
 
-![Responsive screenshot](/assets/images/mockupupdated.png)
+![Responsive screenshot](/assets/images/multi-display.png)
 
 # MASSAGE AT SOLID GYM
 
-Welcome to Massage at Solid gym. https://jaredslocker21.github.io/massage-at-solid-gym/index.html
+Welcome to Meal Plan. https://jaredslocker21.github.io/mealplanapp/
 ### Purpose
-- The basis for this website is inspired by my own registered business here is southern Sweden.
+- Become organized at home. Create a memo and don't forget. Understand your body type and use the calculator 
+to help understand your dietary needs!
 
 ### Goal
-- To attract a new client base.
-- Inform our visitors of What massage Therapy is, and where to find us.
+- Allow our visitors to become more aware of what they eat and help organize. 
 
 ### Demographic
-- Our demographic base is broad but it is within a local setting.
-  * Anyone
-  * Athletes
-  * Anyone suffering from occupational injuries that have repeditive motion and work.
-  * Clients that seek post surgery Rehabilitation.
+- Our demographic is open for everyone. 
+  * Families who need a bit more organization.
+  * Busy Parents
+  * Students
  
 
 ## UX/UI 
@@ -25,28 +24,24 @@ Welcome to Massage at Solid gym. https://jaredslocker21.github.io/massage-at-sol
 ### Users Experience
  - Users are welcome to experience a friction free, clean and easy to navigate website.
  - Easy to access navigation bar.
- - Short and clear descriptions and an easy form to fill out.
- - Returning clients will also be able to find contact inormation and directions easily.
- - This site will explain and answer all questions in short. 
-   * What Massage Therapy is? 
-   * Who benefits from it? 
-   * What types of massage they can receive? 
-   * Prices? 
-   * What to wear? 
-   * How to contact us and be contacted by us.
+ - Find information on how to create better eating habits 
+ - The calculator gives our visitors a better understanding of their diets.
+ - Short and clear descriptions.
+ - Returning visitors will be able to carry on and save more memo's.
 
   - As a first time user:
     * I could navigate the website easily. 
-    * Fill in the Form
-    * Find information easily
+    * Make a memo 
+    * Delete a memo.
+    * Use the calculator 
 
   - As a returning user:
-     * I could find the directions and map easily.
-     * For the future I will add a discount section and updates. 
+     * I am able to return to the saved memo's in my cache
+     
  
 
  ### Users Interface
- - As a UI design my goal is to offer an attractive, interactive, clean and trustworthy website.
+ - As a UI design my goal is to offer a simple , interactive, clean and trustworthy website.
    * Responds well to both mobile and laptop viewing.
  - Simple to use and understand while, not too much content.
  - Initial frame concepts uses Balsamic wireframes. 
@@ -54,24 +49,24 @@ Welcome to Massage at Solid gym. https://jaredslocker21.github.io/massage-at-sol
  
  
 
- ![Balasmic Wireframs](/assets/images/baslamic-wire-frame-resize.png) ![Balasmic Wireframs](/assets/images/wireframe2-resized.png)
+ ![Balasmic Wireframs](/assets/images/wireframe-home.png)
+ ![Balasmic Wireframs](/assets/images/wire-meal-plan-main.png)
+ ![Balasmic Wireframs](/assets/images/wireframe-bmi.png)
+ ![Balasmic Wireframs](/assets/images/wire-home.png)
+ ![Balasmic Wireframs](/assets/images/wire-phoneBMI2.png)
+ ![Balasmic Wireframs](/assets/images/wiremeal-phone.png)
 
 ## Features 
-This website features 8 sections, and 1 external contact form page that are all responsive. We will discuss each feature below.
-  - Navigation Bar 
-  - Logo. Massage Therapy at Solid Gym. The Logo is a link back to the main page.
-  - The landing page image
-  - Massage Therapy Section
-  - A divider Image and call to action
-  - Treatments Section
-  - Contact Page (opens in a external tab)
-  - Footer contains four social media links and a home icon/link back to the top of the page. 
+This website features  sections, and 1 external contact form page that are all responsive. We will discuss each feature below.
+  - This site is an informational site that feature an easy to use BMI calculator and a way to save your 
+  meals plans, make notes and keep organized.
+   
 
 ### Current Features
 
 - __Navigation Bar__
 
-  - First seen at the top of the website is our navigation bar with 4 responsive links. Home, Massage Therapy, Treatments and Contact Page. 3 of those are redirected to their respective section on the page and the contact form is redirects to a new tab that also contains the Navigation Bar.
+  - First seen at the top of the website is our navigation bar with 3 responsive links. Home, Massage Therapy, Treatments and Contact Page. 3 of those are redirected to their respective section on the page and the contact form is redirects to a new tab that also contains the Navigation Bar.
   
   - The navigation bar is clear, easy to read and to understand for all users to navitgate the website. Aria Labels are also added to the links in the navigation bar to allow for better access to those in need.
   
