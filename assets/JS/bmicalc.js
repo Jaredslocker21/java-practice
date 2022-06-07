@@ -12,7 +12,7 @@ function calculateBMI() {
 
   // Correcting the values provided
   if (heightInCm === "" || weight === "") {
-      result.innerHTML = "Invalid Input"
+      result.innerHTML = "Invalid Input";
   } else {
     // Fixes up too two decimal points
     const heightInMtr = heightInCm/100;
