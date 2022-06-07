@@ -1,6 +1,6 @@
 
-let button = document.querySelector("#btn");
-let result = document.querySelector("#result");
+const button = document.querySelector("#btn");
+const result = document.querySelector("#result");
 
 // Function for calculating BMI
 function calculateBMI() {
