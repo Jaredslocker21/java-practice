@@ -40,8 +40,8 @@ good eating habits.
     * Use the calculator 
 
   - As a returning user:
-     * I am able to return to the saved memo's in my cache
-     - You are ablea to use this tool from day to day. 
+     * I am able to return to the saved memo's in my cache.
+     - You are able to use this tool from day to day. 
      - Store recipes, caloric intake and more.
      
  
@@ -93,6 +93,11 @@ This website features  sections, and 1 external contact form page that are all r
 - __What is BMI?__
 
   - The BMI Page is a short description to help the user understand what BMI is and why we use it as a tool.
+
+  __BMI Calculator__ 
+- BMI calculator is used to generate a BMI calculation( Body Mass Index)
+
+![Calculate BMI](/assets/images/bmi-calc.png)
 
 - __Create a MEMO__ 
 - Creating a memo section. Has clear instruction on how to make and delete a memo.
