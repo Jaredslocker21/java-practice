@@ -10,7 +10,8 @@ const addMemoButton = memosContainer.querySelector(".create-memo");
 
 /**JSON.stringify() ... 
  * A common use of JSON is to exchange data to/from a web server. When sending data to a web server, the data has to be a string.
- * he setItem() method sets the value of the specified Storage Object item. The setItem() method belongs to the Storage Object
+ * The setItem() method sets the value of the specified Storage Object item. The setItem() method belongs to the Storage Object
+ * Using an API to store memos into local storage.
  */
 function saveMemos(memos) {
     localStorage.setItem("remember-memos", JSON.stringify(memos));
@@ -19,9 +20,9 @@ function saveMemos(memos) {
 function getMemos() {
     return JSON.parse(localStorage.getItem("remember-memos") || "[]");
 }
-// Create a new memo
+// Create a new memo and content 
 function createMemoElement(id, content) {
-    const element = document.createElement("textarea");
+    const memo = document.createElement("textarea");
     //refering to a text area element and CSS class Id
     element.classList.add("memo");
     element.value = content;
@@ -30,6 +31,7 @@ function createMemoElement(id, content) {
     element.addEventListener("change", () => {
         updateMemo(id, element.value);
     });
+    
     //Delete  a memo 
     element.addEventListener("dblclick", () => {
         deleteMemo(id, element);
@@ -76,6 +78,7 @@ function deleteMemo(id, element) {
 }
 // Event listener Click for new memo
 addMemoButton.addEventListener("click", () => addMemo());
+
 //The forEach() method calls a function for each element in an array.
 getMemos().forEach((memo) => {
     let memoElement = createMemoElement(memo.id, memo.content);

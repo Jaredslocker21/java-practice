@@ -29,6 +29,7 @@ good eating habits.
  - Users are welcome to experience a friction free, clean and easy to navigate website.
  - Easy to access navigation bar.
  - Find information on how to create better eating habits 
+ - Create a Memo 
  - The calculator gives our visitors a better understanding of their diets.
  - Short and clear descriptions.
  - Returning visitors will be able to carry on and save more memo's.
@@ -57,7 +58,7 @@ good eating habits.
  
  
 
- ![Balasmic Wireframs](/assets/images/wireframe-home.png)
+ ![Balasmic Wireframs](/assets/images/wire-final-main.png)
  
  ![Balasmic Wireframs](/assets/images/wire-meal-plan-main.png)
  
@@ -159,6 +160,8 @@ All CSS files passed through https://validator.w3.org/
 
 -JShint
 
+Two warning about of unexpected use ~~ Math.floor symbols.. 
+
 ### Technologies Used
 - Github and Gitpod Cloud Development Environments. 
 - Google Chrome Dev Tools.
@@ -183,6 +186,8 @@ All CSS files passed through https://validator.w3.org/
 
 ## Current Ideas
 - javascript was pretty tough and outside of my comfort zone
+- I learned a lot about the different uses of an API and local storage.
+- Making a calculator helped me understand Javascript a little more.
 
 
 
