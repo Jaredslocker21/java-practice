@@ -44,16 +44,12 @@ function createMemoElement(id, content) {
 function addMemo() {
     let currentMemo = getMemos();
     let memoObject = {
-        id: ~~ (Math.random() * 70000),
+        id: Math.floor(Math.random() * 70000),
         content: ""
     };
 
     let memoElement = createMemoElement(memoObject.id, memoObject.content);
     memosContainer.insertBefore(memoElement, addMemoButton);
-    //The push() method adds new items to the end of an array. 
-    //The push() method changes the length of the array. The push() method returns the new length.
-    currentMemo.push(memoObject);
-
 }
 //Updating a memo 
 function updateMemo(id, newContent) {
@@ -62,6 +58,7 @@ function updateMemo(id, newContent) {
     let targetMemo = memos.filter(memo => memo.id === id)[0];
     if (targetMemo) {
         targetMemo.content = newContent;
+        saveMemos(memos);
     } else {
         targetMemo = { id, content: newContent,
         };
@@ -79,8 +76,11 @@ function deleteMemo(id, element) {
 // Event listener Click for new memo
 addMemoButton.addEventListener("click", () => addMemo());
 
-//The forEach() method calls a function for each element in an array.
+//The forEach() method calls a function for each element in an array
+function initialiseMemoUI() {
 getMemos().forEach((memo) => {
     let memoElement = createMemoElement(memo.id, memo.content);
     memosContainer.insertBefore(memoElement, addMemoButton);
 });
+}
+initialiseMemoUI();
