@@ -8,6 +8,9 @@ Welcome to Meal Plan. https://jaredslocker21.github.io/mealplanapp/
 ### Purpose
 - Become organized at home and on the go. Create a memo and don't forget. Understand your body type and use the calculator 
 to help understand your dietary needs!
+- My inspiration for an app like this. Was to offer something of use and function. 
+- Not just another game. Engaging the visitor in an interactive and functional way. 
+- Also inspired by internet tutorials. 
 
 ### Goal
 - Allow our visitors to become more aware of what they eat and help organize their food priorities and to help maintain 
@@ -38,12 +41,15 @@ good eating habits.
 
   - As a returning user:
      * I am able to return to the saved memo's in my cache
+     - You are ablea to use this tool from day to day. 
+     - Store recipes, caloric intake and more.
      
  
 
  ### Users Interface
  - As UI design my goal is to offer a simple , interactive, clean and trustworthy website.
    * Responds well to both mobile and laptop viewing.
+ - Fuctioning tool to be used on a daily basis-
  - Simple to use and understand while, not too much content.
  - Initial frame concepts uses Balsamic wireframes. 
  - Original Template was created by the Code Institute.
@@ -113,10 +119,6 @@ This website features  sections, and 1 external contact form page that are all r
 ### Media
 
 - Create a MEMO and discover your BMI are tools too help organize. Interactions with the visitor are to be easy, clean and self explanatory.
-	
-### Features Left to Implement
-  - As this will become/grow into something more dynamic. I would also like to add a reviews section a coupons, more options in my Sign-Up form. 
-  - As the company grows. I would also like to add a community outreach program that reaches those in need of more excersize and movement for those with linited mobility.
   
 ## Testing
 
@@ -138,12 +140,6 @@ This website features  sections, and 1 external contact form page that are all r
    * Nest Hub Max 
    * Mozilla Firefox.
 
-  ## Additional Testing on the Iphone 4? 
-![iphone 4 image test](/assets/images/iphone-test-images/iphone4-test-index.png)
-![iphone 4 image test](/assets/images/iphone-test-images/iphone4-test-treatment.png)
-![iphone 4 image test](/assets/images/iphone-test-images/iphone4-test-contact.png)
-![iphone 4 image test](/assets/images/iphone-test-images/iphone4-test-form.png)
-
 - Google Chrome Dev. Tools Lighthouse Results
 
 
@@ -152,14 +148,11 @@ This website features  sections, and 1 external contact form page that are all r
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
-
-![screenshot of no errors html](/assets/images/hTML-validator-resized.png)
+  
 
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
 
-  ![screenshot of css noerrors](/assets/images/css-validator-resized.png)
+-JShint
 
 ### Technologies Used
 - Github and Gitpod Cloud Development Environments. 
@@ -169,9 +162,7 @@ This website features  sections, and 1 external contact form page that are all r
  
 ### Unfixed Bugs
  
-- 24/4 As of now just some media queries before I submit. 
-- 26/4 Ongoing MQ issues had a response by a fellow peer while reading my readme file. And help ensued. Yes.
-- 28/4 Sizing on Treatment photos shows even margins but not 100% of the time. Mobile looks fine.
+
 
 ![treatment image](/assets/images/treatmentslineupresize.png)
 
@@ -182,27 +173,15 @@ This website features  sections, and 1 external contact form page that are all r
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://jaredslocker21.github.io/massage-at-solid-gym/index.html
+
 
 ## Credits 
-
-- Code: Some of the code language, layout, and structure of the webisite are examples taken from the love running walkthrough project and the coders coffee.
-- Photos: credits go to open licensed Adobe stock. https://stock.adobe.com/
-- The submit button was inpired by:   https://freefrontend.com/css-submit-buttons/
-- Sign-Up form was inspired by the Love running walk through and http://w3schools.com 
-- Help and comradary is super important and I'd like to Credit Lauren Nicole and Mats Simonsson for inspiration and encouragement!
-- My mentor Akshat Garg for the valuable information needed.
-- W3 schools for helping answering question.
-- Stack overflow.
-- Code Institute for giving me the opportunity to grow.
+- Google fonts Barlow Condensed was used on the entire page.
+- W3School has been used for instruction and ideas for the overall page.
+- Basic structure inspiration from other app-creators and tutorials.
+- Tutorials and instruction from The Code Institute.
+- Fonts were taken from [Google Fonts](https://fonts.google.com/)
 
 ## Current Ideas
-- finding out about git diff, git pull and git status really helped me see what I was looking at. 
-- rem for all fonts, make all h2 font sizes the same and all of the p one size to make everything consistent 
-- flex box and flex positioning cool. 
-- Voice recognition research has intrigued me. 26/4
-- paper sticky notes 
-- The read me defaults with a table of contents that sticks. :)
-- I did clone to VS and Git desktop.
-
+- javascript was pretty tough and outside of my comfort zone
 
