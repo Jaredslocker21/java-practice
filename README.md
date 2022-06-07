@@ -147,12 +147,12 @@ This website features multiple sections.
 - Google Chrome Dev. Tools Lighthouse Results
 
 
-![lighthouse results](/assets/images/lighthouse-performance.png)
+
 
 ### Validator Testing 
 
 - HTML
-  
+  All HTML Files Pass the validator https://validator.w3.org/
 
 - CSS
 
@@ -163,16 +163,6 @@ This website features multiple sections.
 - Google Chrome Dev Tools.
 - Balsamic Wire Frames
 - techsini.com that is a multi device website mock-up generator.
- 
-### Unfixed Bugs
-
-6-07-
-contrast is not sufficient 
-
- 
-
-
-![treatment image](/assets/images/treatmentslineupresize.png)
 
 ## Deployment
 
