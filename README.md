@@ -2,15 +2,16 @@
 
 ![Responsive screenshot](/assets/images/multi-display.png)
 
-# MASSAGE AT SOLID GYM
+# Meal Plan.
 
 Welcome to Meal Plan. https://jaredslocker21.github.io/mealplanapp/
 ### Purpose
-- Become organized at home. Create a memo and don't forget. Understand your body type and use the calculator 
+- Become organized at home and on the go. Create a memo and don't forget. Understand your body type and use the calculator 
 to help understand your dietary needs!
 
 ### Goal
-- Allow our visitors to become more aware of what they eat and help organize. 
+- Allow our visitors to become more aware of what they eat and help organize their food priorities and to help maintain 
+good eating habits.
 
 ### Demographic
 - Our demographic is open for everyone. 
@@ -41,11 +42,12 @@ to help understand your dietary needs!
  
 
  ### Users Interface
- - As a UI design my goal is to offer a simple , interactive, clean and trustworthy website.
+ - As UI design my goal is to offer a simple , interactive, clean and trustworthy website.
    * Responds well to both mobile and laptop viewing.
  - Simple to use and understand while, not too much content.
  - Initial frame concepts uses Balsamic wireframes. 
  - Original Template was created by the Code Institute.
+ - Signle Clicks to add a Memo and Double Clicks to Remove a memo are easy to use and seamless. 
  
  
 
@@ -66,62 +68,51 @@ This website features  sections, and 1 external contact form page that are all r
 
 - __Navigation Bar__
 
-  - First seen at the top of the website is our navigation bar with 3 responsive links. Home, Massage Therapy, Treatments and Contact Page. 3 of those are redirected to their respective section on the page and the contact form is redirects to a new tab that also contains the Navigation Bar.
+  - First seen at the top of the website is our navigation bar with 3 responsive links. Home, Meal Plans, Therapy, What is BMI? 
   
   - The navigation bar is clear, easy to read and to understand for all users to navitgate the website. Aria Labels are also added to the links in the navigation bar to allow for better access to those in need.
-  
-- __Logo__
-  -The logo Massage at Solid Gym, connects the Navigation bar and main page image. It is also a link to redirect the user to the first page. a
+
 
 - __The landing page image__
-  -The landing image is a beautiful image of a body in motion should reflect the connection between free movement and massage emphasised by the logo. An aria-label is also added for accessability. Photo Credit is not available- I am not the creator and ll credit is too them.
+  - The landing page is clean and easy to use. Instructionsa are clear and easy to use. The simplicity helps the user stay focused and organized. 
+  - BMI calculator is easy to Find and operate
+  - The Create a Memo section is easy to find understand and use.
  
 
-- __Massage Therapy Section__
-   - The Massage Therapy Section gives a brief and clear description of what Massage Therapy is. While also leading our reader on to our next Treatment section at the end of the paragraph. Emphasizing the three directions in therapies. Sports, Occupational and Rehabilitation therapy.
+- __Meal Plans Link__
+   - Meal Planning page is a short description to help the user further understand why meali planning is so important.
    
    
    
-- __Divider Image__
+- __What is BMI?__
 
-  - The divider image informs the visitor with a clear example of how massage therapy differs from a classical massage by it's presentation and adds to the previous Massage Therapy Definition through 
-  an image. It also contains a CTA  (call to action) with a overlay text. photo credit: open licnesed Adobe Stock Images.
+  - The BMI Page is a short description to help the user understand what BMI is and why we use it as a tool.
 
-- __The Treatments Section__ 
+- __Create a MEMO__ 
+- Creating a memo section. Has clear instruction on how to make and delete a memo.
+- Memo's use a bright yellow color to be seen clearly.
+- Shadow was added to create sense of depth 
+- The memo app save's to local storage and deletes from local storage.
 
-   - This section contains 3 clear descriptions, prices and more information about what to expect. 
-   - The images underlining each description gives the visitor an understanding of why we need massage when pain persists. 
-     All photos in this section are Open licensed Adobe Stock photos.
+
+![Create a Memo](/assets/images/resize-create-memo1.png)
 
 
-- __Contact Page__
+
+- __BMI Calculator__
 	
-	- The link opens up in a new tab. It gives our visitors the same easy to Navigate header and Log. An image that reflects coomon injuries people have while needing a MAssage Therapist. A simple and clear form to fillout. **Our clients have very specific needs and all treatments are customized based on the persons health and medical history. All treatments are booked
-	personally with your Therapist. 
-	- Sign- Up here at the top has an input that is clearly labeled and the form is functional. Each input has an aria-label for accessability.
-	- Contact-Us closer to the bottom has an E-mail address, Phone numner an address and a map with that also links to an external larger map for precise directions. 
-  - Photo is an open licensed Adobe Stock Photo.
-
+	- 
 - __Footer__
   
-  - The footer contains 3 social media links that will open a new tab and a home tab that directs you back to the Head of the site.
-  - These links create a good social presence to the public.
-  - The footer is maintained in the contact page 
-  - All link Icons are taken from Font awesome.
-
 ### Content 
-
-- The content was written and composed by myself. Ideas and definitions were clarified in my massage therapy education.
-- The color scheme is relaying a clean and open feeling while the blue tones give are relaxing and trusting. 
-Followed in accordance with [Material.io color tool](https://material.io/) 
-- Icons were taken [Font Awesome](https://fontawesome.com/) 
+- Most content was written by myself and quoted content is cited on the site itself.
 - Fonts were taken from [Google Fonts](https://fonts.google.com/)
 
-![color scheme screen shot](/assets/images/color-scheme-resized%20.png)
+
 
 ### Media
 
--Photos: credits go to open licensed Adobe stock. 
+- Create a MEMO and discover your BMI are tools too help organize. Interactions with the visitor are to be easy, clean and self explanatory.
 	
 ### Features Left to Implement
   - As this will become/grow into something more dynamic. I would also like to add a reviews section a coupons, more options in my Sign-Up form. 
