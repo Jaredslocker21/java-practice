@@ -42,7 +42,7 @@ function createMemoElement(id, content) {
 function addMemo() {
     let currentMemo = getMemos();
     let memoObject = {
-        id: Math.floor(Math.random() * 70000),
+        id: ~~ (Math.random() * 70000),
         content: ""
     };
 
