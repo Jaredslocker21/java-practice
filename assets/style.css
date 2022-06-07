@@ -41,8 +41,7 @@ p {
     font-size: 1.5rem;
     letter-spacing: 4px;
     margin: 10px auto;
-    text-align: left;
-
+    text-align: center
 }
 
 a {
@@ -53,8 +52,6 @@ a {
 #nav li {
     display: inline-block;
     padding: 20px;
-    
-
 
 }
 
@@ -62,9 +59,6 @@ h2 {
     color: rgb(1, 22, 29);
     font-family: "Roboto Mono", sans-serif;
     text-align: center;
-    
-
-
 }
 
 /*Side bar with BMI Calc.*/
@@ -113,7 +107,7 @@ h2 {
 .create-memo {
     height: 175px;
     transition: 0.3s;
-    
+
     cursor: pointer;
     font-size: 2.0rem;
 
@@ -165,4 +159,3 @@ input[type="number"],
     }
 
 }
-
