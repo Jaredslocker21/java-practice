@@ -120,21 +120,23 @@ h2 {
 
 input[type="text"],
 .input-field {
-    margin: 8px 0;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     box-shadow: 2px 5px #888888;
+    height: 25px;
 
 }
 
 input[type="number"],
 .input-field {
-    margin: 8px 0;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     box-shadow: 2px 5px #888888;
+    height: 25px;
 
 }
 
