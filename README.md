@@ -155,6 +155,7 @@ This website features multiple sections.
   All HTML Files Pass the validator https://validator.w3.org/
 
 - CSS
+All CSS files passed through https://validator.w3.org/
 
 -JShint
 
