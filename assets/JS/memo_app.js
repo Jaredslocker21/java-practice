@@ -5,8 +5,8 @@
 //https://www.w3schools.com/jsref/met_storage_getitem.asp
 //https://www.youtube.com/watch?v=AWcZcJaIntQ
 
-const memosContainer = document.getElementById("application");
-const addMemoButton = memosContainer.querySelector(".create-memo");
+let memosContainer = document.getElementById("application");
+let addMemoButton = memosContainer.querySelector(".create-memo");
 
 /**JSON.stringify() ... 
  * A common use of JSON is to exchange data to/from a web server. When sending data to a web server, the data has to be a string.
@@ -22,7 +22,7 @@ function getMemos() {
 }
 // Create a new memo and content 
 function createMemoElement(id, content) {
-    const memo = document.createElement("textarea");
+    const element = document.createElement("textarea");
     //refering to a text area element and CSS class Id
     element.classList.add("memo");
     element.value = content;
