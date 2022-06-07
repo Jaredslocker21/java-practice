@@ -58,16 +58,21 @@ good eating habits.
  
 
  ![Balasmic Wireframs](/assets/images/wireframe-home.png)
+ 
  ![Balasmic Wireframs](/assets/images/wire-meal-plan-main.png)
+ 
  ![Balasmic Wireframs](/assets/images/wireframe-bmi.png)
+ 
  ![Balasmic Wireframs](/assets/images/wire-home.png)
+ 
  ![Balasmic Wireframs](/assets/images/wire-phoneBMI2.png)
+ 
  ![Balasmic Wireframs](/assets/images/wiremeal-phone.png)
 
 ## Features 
-This website features  sections, and 1 external contact form page that are all responsive. We will discuss each feature below.
+This website features multiple sections.
   - This site is an informational site that feature an easy to use BMI calculator and a way to save your 
-  meals plans, make notes and keep organized.
+  meals plans, make notes and keep organized by clicking to make a memo and double clicking to delete a memo.
    
 
 ### Current Features
@@ -109,12 +114,6 @@ This website features  sections, and 1 external contact form page that are all r
 ![Create a Memo](/assets/images/resize-create-memo1.png)
 
 
-
-- __BMI Calculator__
-	
-	- 
-- __Footer__
-  
 ### Content 
 - Most content was written by myself and quoted content is cited on the site itself.
 - Fonts were taken from [Google Fonts](https://fonts.google.com/)
@@ -166,6 +165,10 @@ This website features  sections, and 1 external contact form page that are all r
 - techsini.com that is a multi device website mock-up generator.
  
 ### Unfixed Bugs
+
+6-07-
+contrast is not sufficient 
+
  
 
 
