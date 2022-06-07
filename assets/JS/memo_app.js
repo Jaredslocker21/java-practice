@@ -34,7 +34,7 @@ function createMemoElement(id, content) {
     
     //Delete  a memo 
     element.addEventListener("dblclick", () => {
-        deleteMemo(id, element);
+         deleteMemo(id, element);
     });
 
     return element;

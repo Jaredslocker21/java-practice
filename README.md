@@ -10,7 +10,7 @@ Welcome to Meal Plan. https://jaredslocker21.github.io/mealplanapp/
 to help understand your dietary needs!
 - My inspiration for an app like this. Was to offer something of use and function. 
 - Not just another game. Engaging the visitor in an interactive and functional way. 
-- Also inspired by internet tutorials. 
+- Also inspired by wikipedia in design and ease. 
 
 ### Goal
 - Allow our visitors to become more aware of what they eat and help organize their food priorities and to help maintain 
@@ -178,7 +178,7 @@ Two warning about of unexpected use ~~ Math.floor symbols..
 
 
 ## Credits 
-- Google fonts Barlow Condensed was used on the entire page.
+- Google fonts Roboto Mono  was used for the H1 and H2 while the font for the paragraphs is Sans Serif.
 - W3School has been used for instruction and ideas for the overall page.
 - Basic structure inspiration from other app-creators and tutorials.
 - Tutorials and instruction from The Code Institute.

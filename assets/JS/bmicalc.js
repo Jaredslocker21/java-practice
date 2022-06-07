@@ -5,9 +5,9 @@ const result = document.querySelector("#result");
 // Function for calculating BMI
 function calculateBMI() {
   /** Input height function as a string*/
-  let heightInCm = parseInt(document.querySelector("#height").value);
+  let heightInCm = (document.querySelector("#height").value);
   /**  Input weigth as a string*/
-  let weight = parseInt(document.querySelector("#weight").value);
+  let weight = (document.querySelector("#weight").value);
 
 
   // Correcting the values provided
