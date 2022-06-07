@@ -193,3 +193,7 @@ contrast is not sufficient
 ## Current Ideas
 - javascript was pretty tough and outside of my comfort zone
 
+
+
+
+![JSHint warnings](/assets/images/jshint-warnings.png)
