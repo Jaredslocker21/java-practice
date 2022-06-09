@@ -127,7 +127,7 @@ This website features multiple sections.
   
 ## Testing
 
-  - This website has passed all tests through Google Chromes Dev. Tool, 'Lighthouse'. It is responsive and shows promise.
+  - This website has passed all tests through Google Chromes Dev. Tool, 'Lighthouse'. 
    
   - I have tested the site on 
    * Microsoft Edge 
@@ -158,7 +158,9 @@ This website features multiple sections.
 - CSS
 All CSS files passed through https://validator.w3.org/
 
--JShint
+- JShint
+Passes through JSHint with no major errors
+
 
 Two warning about of unexpected use ~~ Math.floor symbols.. 
 
@@ -166,6 +168,7 @@ Two warning about of unexpected use ~~ Math.floor symbols..
 - Github and Gitpod Cloud Development Environments. 
 - Google Chrome Dev Tools.
 - Balsamic Wire Frames
+- JShint
 - techsini.com that is a multi device website mock-up generator.
 
 ## Deployment
@@ -178,11 +181,13 @@ Two warning about of unexpected use ~~ Math.floor symbols..
 
 
 ## Credits 
-- Google fonts Roboto Mono  was used for the H1 and H2 while the font for the paragraphs is Sans Serif.
 - W3School has been used for instruction and ideas for the overall page.
 - Basic structure inspiration from other app-creators and tutorials.
 - Tutorials and instruction from The Code Institute.
-- Fonts were taken from [Google Fonts](https://fonts.google.com/)
+- Google tutorials and research, research, research.
+- Google fonts Roboto Mono  was used for the H1 and H2 while the font for the paragraphs is Sans Serif.
+
+ [Google Fonts](https://fonts.google.com/)
 
 ## Current Ideas
 - javascript was pretty tough and outside of my comfort zone

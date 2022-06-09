@@ -1,7 +1,6 @@
 
 const button = document.querySelector("#btn");
 const result = document.querySelector("#result");
-
 // Function for calculating BMI
 function calculateBMI() {
   /** Input height function as a string*/
@@ -16,7 +15,7 @@ function calculateBMI() {
   } else {
     // Fixes up too two decimal points
     const heightInMtr = heightInCm/100;
-    //However, the * operator for example implicity performs this coercion, so you wouldn't need the parseInt.
+    // the * operator for example implicity performs this coercion, so you wouldn't need the parseInt. I used it anyways for readability and good practice.
     const bmi = (weight / (heightInMtr * heightInMtr)).toFixed(2);
         // Results of BMI prints the result
     if (bmi < 18.6) {
