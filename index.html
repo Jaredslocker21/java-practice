@@ -13,24 +13,25 @@
 </head>
 
 <body>
-    <header>
+    <div id="cursor"></div>
+    <header header class="header-color">
         <nav>
             <ul id="nav" class="home">
                 <li>
                     <a href="index.html" aria-label="To the main page.">Home</a>
                 </li>
                 <li>
-                    <a href="mealplans.html" aria-label="Why make a meal plan page?.">Meal Plans</a>
+                    <a href="mealplans.html" aria-label="Why make a meal plan page?.">Plans</a>
                 </li>
                 <li>
-                    <a href="bmi.html" aria-label="What is BMI page?">What is BMI?</a>
+                    <a href="bmi.html" aria-label="What is BMI page?">How is Your Day!</a>
                 </li>
             </ul>
         </nav>
     </header>
     <div id="mpcontainer">
         <div>
-            <h1>Create a Meal Plan and Organize your health.</h1>
+            <h1>Keep Your Notes Here!</h1>
             <h2>
                 Click on the + sign in the empty memo and create a new memo.
                 <br>
@@ -38,7 +39,7 @@
                 Double Click to delete a memo.
                 <br>
                 <br>
-                Record recipes, caloric intake and meal times. Keep it simple. The math is!
+                Keep Organized and keep notes. Thank You!
             </h2>
 
         </div>
@@ -46,9 +47,9 @@
             <button class="create-memo" type="button">+</button>
         </div>
     </div>
-    <aside class="sidenav">
+    <aside class="sidenav sidenav-color">
         <div class="container">
-            <h2>BMI Calculator</h2>
+            <h2>Javascript Calculator</h2>
             <label for="height">Height:</label>
             <input type="text" id="height" aria-label="insert your height in kilograms">
             <br>
@@ -63,10 +64,10 @@
             <br>
             <br>
             <p>
-                Remember understanding your BMI is just a tool.
+                Remember understanding Yourself is just a tool.
                 <br>
                 <br>
-                Wether you have a family or a partner;
+                Not Giving Up
                 Organizing your meals is a great way to make sure you are getting all you need to
                 <br>
                 Live a happier and healthier life.
@@ -78,6 +79,8 @@
     </aside>
     <script type="text/javascript" src="assets/JS/bmicalc.js"></script>
     <script type="text/javascript" src="assets/JS/memo_app.js"></script>
+    <script type="text/javascript" src="assets/JS/cursor.js"></script> <!-- Add this line for the cursor effect -->
 </body>
+
 
 </html>
